@@ -1,14 +1,21 @@
+// Override variables
+$dark: #000000;
+$danger:#fb3b5c;
+// Import files
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 *{
     font-family: 'DM Sans', sans-serif;
 }
-
+body{
+    background: linear-gradient(black 30%, transparent 30%) no-repeat;
+}
 @media (min-width: 1200px) {
     .navbarLogo{
-        content: url('/public/airbnb-icon-long.png');
+        content: url('../public/airbnb-icon-long.png');
         width: 100px;
-
     }
 }
 @media ( min-width: 950px){
@@ -17,12 +24,12 @@
     }
 }
 
-.navbarLogo{
-    margin-left: 10px;
-}
-
 .dropdown-menu{
     right:10px;
+}
+
+.form-control:focus{
+    box-shadow: none!important;
 }
 .sideBar{
     display: flex;
@@ -55,14 +62,14 @@
 
 
 .todotripJumbotron {
-    background-image: url('/public/to-do-trip.webp');
+    background-image: url('../public/to-do-trip.webp');
     background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
 }
 
 .todohomeJumbotron {
-    background-image: url('/public/to-do-home.webp');
+    background-image: url('../public/to-do-home.webp');
     background-repeat: no-repeat;
     background-size: cover;
     height: 700px;
@@ -78,12 +85,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
-
+}
+.jumbotron__ukraine{
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .jumbotron__flexible__title, .jumbotron__ukraine__title{
     font-weight: 500;
-    font-size: 50px;
+    font-size: 40px;
 }
 .jumbotron__flexible button{
     font-size: 18px;
@@ -106,7 +120,7 @@
     max-width:860px;
 }
 
-.wrapper_two{
+.searchBar__panel__wrapper .-wrapperTwo{
     grid-template-columns: auto auto;
 }
 .searchBar__wrapper__container .searchBar__container__button, .searchBar__wrapper__searchbutton .searchBar__container__button{
@@ -123,6 +137,9 @@
     font-weight: 400;
     color: #808080 ;
 }
+.searchBar__wrapper__container .-button{
+    border: red solid 1px;
+}
 .searchBar__container__search{
     width: 50px;
     height: 50px;
@@ -138,9 +155,7 @@ input[type=text] {
     background-color: #ebebeb;
     border-radius: 40px;
 } 
-.form-control:focus{
-    box-shadow: none!important;
-}
+
 .searchBar{
     position: relative;
     margin-bottom: 10px;
@@ -165,6 +180,9 @@ input[type=text] {
     background-color: white;
     transform: scale(0,1);
     transition: transform 300ms ease;
+}
+.searchBar__item__link:hover{
+    color:#808080;
 }
 
 .searchBar__item__link:hover::after{
@@ -203,4 +221,9 @@ input[type=text] {
 }
 .langModal__row__col{
     width:100%;
+}
+
+
+.navbarLogo{
+    margin-left: 10px;
 }

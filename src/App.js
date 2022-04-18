@@ -1,4 +1,4 @@
-import './App.css';
+import React from "react";
 import Navbar from './components/Navbar.js';
 import Body from './components/Body.js';
 import Footer from './components/Footer.js';
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
-      <Body/>
+        <Body/>
       <Footer />
     </div>
   );

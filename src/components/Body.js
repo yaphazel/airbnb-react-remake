@@ -1,44 +1,46 @@
 import React from 'react'
 import InspireTabs from './InspireTabs.js';
+import Jumbotron from './Jumbotron.js';
 function Body() {
   return (
-    <div class="container-fluid">
-        <div class="row">
-            <div class="saveukraineJumbotron col m-5 p-5 text-white text-center bg-danger rounded">
-                <h1>Help house 100,000 refugees fleeing Ukraine</h1>
-                <button type="button" class="btn btn-outline-light text-light">Learn more</button>
+    <div className=" container-fluid">
+        <Jumbotron/>
+        {/* <div className="body__section__row row">
+            <div className="jumbotron__ukraine col mx-5 mb-5 p-5 text-white text-center bg-danger rounded">
+                <h1 className="jumbotron__ukraine__title">Help house 100,000 refugees fleeing Ukraine</h1>
+                <button type="button" className="btn btn-outline-light text-light">Learn more</button>
             </div>
         </div>
-        <div class="row">
-            <div class="imflexibleJumbotron col m-5 p-5 text-white text-center rounded ">
-                <h1>Let your curiosity do the booking</h1>
-                <button type="button" class="btn btn-light rounded-pill p-3">I'm flexible</button>
+        <div className="jumbotron__flexible row  m-5 p-5">
+            <div className=" col text-white text-center rounded ">
+                <h1 className="jumbotron__flexible__title">Let your curiosity do the booking</h1>
+                <button type="button" className="jumbotron__flexible__button btn btn-light rounded-pill py-3 px-5">I'm flexible</button>
             </div>
-        </div>
-        <div class="discoverExperience">
-            <div class="row">
-                <div class="discoverExperience__title col m-5">
+        </div> */}
+        <div className="discoverExperience">
+            <div className="row">
+                <div className="discoverExperience__title col m-5">
                     <h1>Discover Airbnb Experiences</h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="todotripJumbotron col ms-md-5 me-md-2 p-5 text-white text-left rounded">
-                    <h1 class="todotripJumbotron__title">Things to do on your trip</h1>
-                    <button type='button' class="btn text-dark btn-light">Experiences</button> 
+            <div className="row">
+                <div className="todotripJumbotron col ms-md-5 me-md-2 p-5 text-white text-left rounded">
+                    <h1 className="todotripJumbotron__title">Things to do on your trip</h1>
+                    <button type='button' className="btn text-dark btn-light">Experiences</button> 
                 </div>
-                <div class="todohomeJumbotron col me-5 ms-2 p-5 text-white text-left rounded">
-                    <h1 class="todohomeJumbotron__title">Things to do from home</h1>
-                    <button type='button' class="btn text-dark btn-light"> Online Experiences</button>   
+                <div className="todohomeJumbotron col me-5 ms-2 p-5 text-white text-left rounded">
+                    <h1 className="todohomeJumbotron__title">Things to do from home</h1>
+                    <button type='button' className="btn text-dark btn-light"> Online Experiences</button>   
                 </div>
             </div>
         </div>
-        <div class="giftCards">
-            <div class="row my-4">
-                <div class="col-3 m-5">
+        <div className="giftCards">
+            <div className="row my-4">
+                <div className="col-3 m-5">
                     <h1>Shop Airbnb gift cards</h1>
-                    <button type='button' class="btn text-light btn-dark p-2">Learn more</button>
+                    <button type='button' className="btn text-light btn-dark p-2">Learn more</button>
                 </div>
-                <div class="col m-3">
+                <div className="col m-3">
                     <img src="gift-card.webp" alt="" height="360px"/>
                 </div>
             </div>

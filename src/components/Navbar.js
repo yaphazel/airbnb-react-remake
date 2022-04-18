@@ -2,67 +2,50 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import SearchBar from './SearchBar';
+import LanguageModal from './LanguageModal';
+
 function Navbar() {
   return (
     <div>
-      <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img class="navbarLogo" src="/airbnb-icon.png" alt="" width="35px"  />
-          </a>
-          <div class="searchBar">
-            <ul class="navbar-nav">
-              <li class="nav-item mx-1">
-                <a href="#" aria-current="page" id="place-to-stay-link" class="nav-link text-light">Places to stay</a>
+      <nav className="navbar navbar-expand-xl navbar-dark bg-dark">
+        <div className="navbar__container container-fluid">
+          <a className="navbar__container__brand navbar-brand m-2" href="#">
+            <img className="navbarLogo" src="/airbnb-icon.png" alt="" width="34px"  />
+          </a>    
+          <div className="sideBar">
+            <ul className="sideBar__links navbar-nav d-flex flex-row">
+              <li className="sideBar__links__host nav-item mx-2">
+                <a href="#" id="become-host-link" className="sideBar__host__button btn nav-link text-light" role="button">Become A Host</a>
               </li>
-              <li class="nav-item">
-                <a href="#" id="experiences-link"  class="nav-link text-light">Experiences</a>
+              <li className="sideBar__links__langauge nav-item mx-2">
+                <button type="button" id="language-link" className="sideBar__langauge__button btn nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  <img src="/language-icon.png" alt="" width="20px" />
+                </button>
+                <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div className="modal-dialog modal-xl modal-dialog-scrollable">
+                    <div className="modal-content">
+                      <div className="modal-header">
+                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div className="modal-body">
+                        <LanguageModal/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </li>
-              <li class="nav-item">
-                <a href="#" id="online-experiences-link" class="nav-link text-light">Online Experiences</a>
-              </li>
-            </ul>
-            {/* <form class="d-flex">
-              <label htmlFor=""></label>
-              <input class="form-control me-2" type="search" placeholder="Where are you going?" aria-label="Search"/>
-              <button class="btn btn-danger" type="submit">Add dates</button>
-              <button class="btn btn-danger" type="submit">Add dates</button>
-              <button class="btn btn-danger" type="submit">Add guests</button>
-              <button class="btn btn-danger" type="submit"><img src="/search-icon.png" alt="" width="30px"/></button>
-            </form>  */}
-          </div>      
-          <div class="sideBar">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a href="#" id="become-host-link" class="becomehostLink btn nav-link text-light" role="button">Become A Host</a>
-              </li>
-              <li class="nav-item">
-                <button id="language-link" class="languageLink btn nav-link"><img src="/language-icon.png" alt="" width="20px" /></button>
-              </li>
-              <li class="nav-item">
-                <div class="btn-group">
-                  <button class="sideMenu btn btn-light btn-sm rounded-pill" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <FontAwesomeIcon icon={faBars} size="lg" />
-                    <img src="profile-icon.png" alt="" width="30px" class="ms-2"/>
-                  </button>
-                  <ul class="dropdown-menu dropdown-menu-end">
-                    <li class="dropdown-item">
-                      <a href="#" id="sign-up-link" class="nav-link"><strong>Sign up</strong></a>
-                    </li>
-                    <li class="dropdown-item">
-                      <a href="#" id="log-in-link"  class="nav-link">Log In</a>
-                    </li>
-                    <hr/>
-                    <li class="dropdown-item">
-                      <a href="#" aria-current="page" id="host-your-home-link" class="nav-link">Host Your Home</a>
-                    </li>
-                    <li class="dropdown-item">
-                      <a href="#" id="host-an-experience-link" class="nav-link">Host An Experience</a>
-                    </li>
-                    <li class="dropdown-item">
-                      <a href="#" id="help-link" class="nav-link">Help</a>
-                    </li>
-                  </ul>
+              <li className="sideBar__links__dropdown dropdown nav-item mx-2">
+                <button type="button" className="btn btn-light btn-sm rounded-pill" data-bs-toggle="dropdown" id="dropdownMenuButton" aria-expanded="false">
+                  <span className="p-1"><FontAwesomeIcon icon={faBars} size="sm" /></span>
+                  <img src="profile-icon.png" alt="" width="30px" className="ms-2"/>
+                </button>
+                <div className="dropdown-menu dropdown-menu-end position-absolute" aria-labelledby="dropdownMenuButton">
+                  <button className="dropdown-item" type="button"><strong>Sign up</strong></button>
+                  <button className="dropdown-item" type="button">Log In</button>
+                  <hr />
+                  <button className="dropdown-item" type="button">Host Your Home</button>
+                  <button className="dropdown-item" type="button">Host An Experience</button>
+                  <button className="dropdown-item" type="button">Help</button>
                 </div>
               </li>
             </ul>

@@ -1,19 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import "jquery";
+import "../src/custom.scss";
+// import "jquery";
 import "bootstrap/dist/js/bootstrap";
 import "popper.js/dist/umd/popper";
-import "bootstrap/dist/css/bootstrap.css"
-import "./App.css"
+// import "bootstrap/dist/css/bootstrap.css"
 
 ReactDOM.render(<App />, document.getElementById('root'));
-
-
-
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );

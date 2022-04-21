@@ -1,3 +1,5 @@
+Note: Formatting currently works only on desktop screen. Mobile version is work in progress.
+
 07/04/2022
 1. Basic shell of website completed (navbar, body, footer).
 

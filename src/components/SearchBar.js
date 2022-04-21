@@ -49,7 +49,7 @@ function SearchBar() {
               <button className="searchBar__container__button btn" type="submit">
                 <small>Guests<br/><span>Add guest</span></small>
               </button>
-              <button className="searchBar__container__search btn btn-danger rounded-circle" type="submit"><img src="/search-icon.png" alt="" width="25px" /></button>
+              <button className="searchBar__container__search btn btn-danger rounded-circle" type="submit"><img src="/airbnb-react-remake//search-icon.png" alt="" width="25px" /></button>
               </div>
           </div>
         </div>
@@ -65,7 +65,7 @@ function SearchBar() {
               <button className="searchBar__container__button btn">
                 <small>Date<br/><span>Add when you want to go</span></small>
               </button>
-              <button className="searchBar__container__search btn btn-danger rounded-circle" type="submit"><img src="/search-icon.png" alt="" width="25px" /></button>
+              <button className="searchBar__container__search btn btn-danger rounded-circle" type="submit"><img src="/airbnb-react-remake/search-icon.png" alt="" width="25px" /></button>
             </div>
           </div>
         </div>

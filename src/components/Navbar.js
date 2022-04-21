@@ -22,7 +22,7 @@ const Navbar = () => {
       <nav className={ navBar ? "navSection__nav navbar navbar-expand-xl bg-light fixed-top" : "navSection__nav navbar navbar-expand-xl navbar-dark bg-dark"}>
         <div className="navbar__nav__container container-fluid">
           <a className="navbar__container__brand navbar-brand m-2" href="#">
-            {/* <img className={ navBar ? "navbarLogo__pink ps-1" : "navbarLogo"} src={ navBar ? "/airbnb-icon-pink.png" : "/airbnb-icon.png"} alt="" width="20px"  /> */}
+            <img className={ navBar ? "navbarLogo__pink ps-1" : "navbarLogo"} src={ navBar ? "/airbnb-react-remake/airbnb-icon-pink.png" : "/airbnb-react-remake/airbnb-icon.png"} alt="" width="20px"  />
           </a>    
           <div className="navbar__nav__sideBar">
             <ul className="navbar__sideBar__links navbar-nav d-flex flex-row">
@@ -31,7 +31,7 @@ const Navbar = () => {
               </li>
               <li className="sideBar__links__langauge nav-item mx-2">
                 <button type="button" id="language-link" className="sideBar__langauge__button btn nav-link px-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                  <img src={ navBar ? "./airbnb-react-remake/public/language-icon-black.png" : "./airbnb-react-remake/public/language-icon.png"} alt="" width="20px" />
+                  <img src={ navBar ? "./airbnb-react-remake/language-icon-black.png" : "/airbnb-react-remake/language-icon.png"} alt="" width="20px" />
                 </button>
                 <div className="sideBar__language__modal modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                   <div className="modal-dialog modal-xl modal-dialog-scrollable">
@@ -49,7 +49,7 @@ const Navbar = () => {
               <li className="sideBar__links__dropdown dropdown nav-item mx-2">
                 <button type="button" className="btn btn-light btn-sm rounded-pill" data-bs-toggle="dropdown" id="dropdownMenuButton" aria-expanded="false">
                   <span className="p-1"><FontAwesomeIcon icon={faBars} size="sm" /></span>
-                  <img src="profile-icon.png" alt="" width="30px" className="ms-2"/>
+                  <img src="/airbnb-react-remake/profile-icon.png" alt="" width="30px" className="ms-2"/>
                 </button>
                 <div className="dropdown-menu dropdown-menu-end position-absolute" aria-labelledby="dropdownMenuButton">
                   <button className="dropdown-item" type="button"><strong>Sign up</strong></button>

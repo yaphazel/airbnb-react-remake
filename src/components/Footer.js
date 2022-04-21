@@ -55,9 +55,9 @@ function Footer() {
           <div className="footerSocial__media order-xl-last col-12 col-xl-6 justify-content-xl-end justify-content-md-center justify-content-start">
             <a className="footerSocial__media__language px-3"><img src="./language-icon-black.png" alt="" width="18px" /> English(US) </a>
             <a className="footerSocial__media__currency px-3"><span>$</span>HKD</a>
-            <a className="footerSocial__media__social px-2"><img src="./facebook.png" alt="" width="22px" /></a>
-            <a className="footerSocial__media__social px-2"><img src="./twitter.png" alt="" width="22px" /></a>
-            <a className="footerSocial__media__social px-2"><img src="./instagram.png" alt="" width="22px" /></a>
+            <a className="footerSocial__media__social px-2"><img src="./airbnb-react-remake/facebook.png" alt="" width="22px" /></a>
+            <a className="footerSocial__media__social px-2"><img src="./airbnb-react-remake/twitter.png" alt="" width="22px" /></a>
+            <a className="footerSocial__media__social px-2"><img src="./airbnb-react-remake/instagram.png" alt="" width="22px" /></a>
           </div>
           <div className="footerSocial__copyright py-2 order-xl-first col-12 col-xl-6 justify-content-xl-start justify-content-md-center justify-content-start">
             <div className="footerSocial__copyright__title px-3">

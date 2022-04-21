@@ -33,7 +33,7 @@ function Body() {
                     <button type='button' className="gift__title__button btn text-light btn-dark p-2 px-4"><strong>Learn more</strong></button>
                 </div>
                 <div className="gift__row__image col m-3">
-                    <img className="gift__image__img" src="gift-card.webp" alt="" height="340px"/>
+                    <img className="gift__image__img" src="/airbnb-react-remake/gift-card.webp" alt="" height="340px"/>
                 </div>
             </div>
         </div>

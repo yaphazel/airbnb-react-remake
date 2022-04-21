@@ -1,0 +1,328 @@
+// Override variables
+$dark: #000000;
+$danger:#fb3b5c;
+// Import files
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+*{
+    font-family: 'DM Sans', sans-serif;
+}
+body{
+    background: linear-gradient(black 25%, transparent 25%) no-repeat;
+    padding: 0;
+    margin: 0;
+}
+
+.bodySection .discover__row__title{
+    font-weight: 500;
+    font-size: 3vw;
+}
+
+.bodySection__tripJumbotron__inner {
+    background-image: url('../public/to-do-trip.webp');
+}
+.bodySection__homeJumbotron__inner {
+    background-image: url('../public/to-do-home.webp');
+}
+.bodySection__tripJumbotron__inner, .bodySection__homeJumbotron__inner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vw;
+}
+
+.bodySection__tripJumbotron__title, .bodySection__homeJumbotron__title{
+    font-weight: 500;
+    font-size: 4vw;
+
+}
+.dropdown-menu{
+    right:10px;
+}
+.footerInspo__section{
+    font-size: 15px;
+}
+.footerSection{
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+.footerSection__container__title{
+    font-weight: 700;
+}
+.form-control:focus{
+    box-shadow: none!important;
+}
+
+.gift__title__h1{
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+.inspireTabs__lists__item .inspireTabs__item__link{
+    text-decoration: none;
+    color: #808080;
+    font-weight: 500;
+    border-radius: 10px;
+}
+.inspireTabs__lists__item .inspireTabs__item__link:hover{
+    background-color: #f2f2f2;
+    color: #808080;
+}
+
+.inspireTabs__lists__item .active span{
+    border-bottom: 2px black solid;
+}
+.inspireTabs__lists__item .active, .inspireTabs__lists__item .active:hover{
+    color: #000000;
+}
+
+.inspireTabs__panel__row .-displayNone{
+    display:none;
+}
+.inspireTabs__content__button {
+    text-align: left;
+    text-decoration: underline;
+}
+.inspireTabs__col__link{
+    font-size: 14px;
+}
+.inspireTabs__col__link span {
+    color: #808080 ;
+}
+.jumbotron__flexible {
+    background-image: url('https://a0.muscache.com/im/pictures/23b047cd-19c9-42c0-a83b-2f4f6f25717b.jpg?im_w=1200');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+.jumbotron__ukraine{
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.jumbotron__flexible__title, .jumbotron__ukraine__title{
+    font-weight: 500;
+    font-size: 5vw;
+}
+.jumbotron__flexible button{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(172,4,95);
+    color: linear-gradient(90deg, rgba(172,4,95,1) 0%, rgba(159,38,160,1) 100%, rgba(0,212,255,1) 100%);
+}    
+.searchBar{
+    margin:auto;
+    padding:0;
+    max-width: 900px;
+    transition:  3000ms ease;
+}
+.searchBar .-none{
+    display: none;
+}
+
+.searchBar__panel__wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: white;
+    border-radius: 40px;
+    margin: auto;
+    width:90%;
+    max-width:860px;
+}
+
+.searchBar__content__panel .-wrapperTwo{
+    grid-template-columns: auto auto;
+}
+
+
+.searchBar__wrapper__container .searchBar__container__button, .searchBar__wrapper__searchbutton .searchBar__container__button{
+    text-align: left;
+    padding-left: 20px;
+    width: 100%;
+}
+.searchBar__wrapper__container small{
+    font-size: 12px;
+    font-weight: 600;
+}
+.searchBar__wrapper__container span, input[type=text]{
+    font-size: 14px;
+    font-weight: 400;
+    color: #808080 ;
+}
+
+.searchBar__container__search{
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-right: 5px;
+}
+input[type=text] {
+    background-color: transparent !important;
+    padding: 0;
+  }
+
+.searchBar__wrapper__container:hover, .searchBar__wrapper__searchbutton:hover{
+    background-color: #ebebeb;
+    border-radius: 40px;
+} 
+
+.searchBar{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.searchBar__lists__item{
+    position: relative;
+    font-size:15px;
+
+}
+.searchBar__item__link{
+    text-decoration: none;
+}
+
+.searchBar__item__link::after{
+    content:'';
+    position: absolute;
+    height:2px;
+    width: 6px;
+    left:50%;
+    right:50%;
+    bottom: 0;
+    background-color: white;
+    transform: scale(0,1);
+    transition: transform 300ms ease;
+}
+
+.searchBar__lists__item a:hover{
+    opacity: 0.7;
+}
+
+.searchBar__item__link:hover::after{
+    transform: scale(1,1);
+}
+
+.searchBar__lists__item .active::after{
+    content:'';
+    position: absolute;
+    height:2px;
+    width:20%;
+    bottom: 0;
+    left:40%;
+    right: 60%;
+    background-color: white;
+    display: flex;
+    justify-items: center;
+    transform: none;
+    transition:none;
+}
+.sideBar__host__button:hover, .sideBar__langauge__button:hover{
+    background-color:#333333;
+    border-radius: 40px;
+} 
+.langModal .langModal__col__button{
+    text-align: left;
+    border: 1px solid red;
+    width:100%;
+}
+
+.langModal__col__button small{
+    font-size: 15px;
+    font-weight: 500;
+}
+.langModal__col__button span{
+    font-size: 15px;
+    font-weight: 400;
+    color: #808080 ;
+}
+.langModal__row__col{
+    width:100%;
+}
+
+.navbarLogo{
+    margin-left: 10px;
+}
+
+.navbar__nav__container{
+    width:90%;
+}
+.navbar__nav__sideBar{
+    display: flex;
+    flex-direction: row;
+}
+.navbar__nav__sideBar .sideBar__host__button{
+    font-size: smaller;
+    height: 40px;
+    border-radius: 40px;
+}
+.navbar__nav__sideBar .sideBar__langauge__button{
+    height: 40px;
+    border-radius: 40px;
+}
+
+.navbar__nav__sideBar .btn-group{
+    height: 40px;
+}
+.navbar__nav__sideBar .sideBar__langauge__button img{
+    display: block;
+}
+.navbar__nav__sideBar .btn-group .btn{
+    width: 80px;
+}
+@media (max-width: 1300px) {
+    .inspireTabs__nav{
+        white-space: nowrap;
+        display: block;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        max-width: 100%;
+    }
+    
+    .inspireTabs__nav li {
+        display: inline-block
+    }
+    .bodySection .discover__row__title{
+        font-size: 28px;
+    }
+}
+@media (min-width: 1200px) {
+    .navbarLogo{
+        content: url('../public/airbnb-icon-long.png');
+        width: 100px;
+    }
+    .navbarLogo__pink{
+        content: url('../public/airbnb-icon-long-pink.png');
+        width: 100px;
+    }
+    .jumbotron__flexible__title, .jumbotron__ukraine__title{
+        font-size: 42px;
+    }
+    .searchBar{
+        top:-75px;
+    }
+    
+}
+@media ( min-width: 992px){
+    .footerSection__seperator{
+        display: none;
+    }
+}
+@media ( max-width: 768px){
+    .bodySection__tripJumbotron__inner, .bodySection__homeJumbotron__inner {
+        height: 700px;
+        margin-bottom: 10px;
+    }
+    .bodySection__tripJumbotron__title,.bodySection__homeJumbotron__title {
+        font-size: 30px;
+    }
+}

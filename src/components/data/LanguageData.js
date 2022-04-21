@@ -1,4 +1,4 @@
-export default[
+const LanguageData = [
     {
         id: 0,
         language:"English",
@@ -448,3 +448,4 @@ export default[
    
 ]
 
+export default LanguageData;

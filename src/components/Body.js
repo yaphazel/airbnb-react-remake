@@ -3,45 +3,37 @@ import InspireTabs from './InspireTabs.js';
 import Jumbotron from './Jumbotron.js';
 function Body() {
   return (
-    <div className=" container-fluid">
+    <div className="bodySection container-fluid">
         <Jumbotron/>
-        {/* <div className="body__section__row row">
-            <div className="jumbotron__ukraine col mx-5 mb-5 p-5 text-white text-center bg-danger rounded">
-                <h1 className="jumbotron__ukraine__title">Help house 100,000 refugees fleeing Ukraine</h1>
-                <button type="button" className="btn btn-outline-light text-light">Learn more</button>
+        <div className="bodySection__discover discoverExperience m-3 p-3">
+            <div className="bodySection__discover__row row">
+                <h1 className="discover__row__title col m-3 m-lg-5">
+                    Discover Airbnb Experiences
+                </h1>
             </div>
-        </div>
-        <div className="jumbotron__flexible row  m-5 p-5">
-            <div className=" col text-white text-center rounded ">
-                <h1 className="jumbotron__flexible__title">Let your curiosity do the booking</h1>
-                <button type="button" className="jumbotron__flexible__button btn btn-light rounded-pill py-3 px-5">I'm flexible</button>
-            </div>
-        </div> */}
-        <div className="discoverExperience">
-            <div className="row">
-                <div className="discoverExperience__title col m-5">
-                    <h1>Discover Airbnb Experiences</h1>
+            <div className="bodySection__discover__row row mx-2 mx-md-3 mx-lg-5 mb-1 mb-lg-4">
+                <div className="bodySection__row__tripJumbotron col-12 col-sm-6 text-white text-left">
+                    <div className="bodySection__tripJumbotron__inner p-5 rounded">
+                        <h1 className="bodySection__tripJumbotron__title">Things to do on your trip</h1>
+                        <button type='button' className="btn mt-3 py-2 px-4 text-dark btn-light">Experiences</button> 
+                    </div>
                 </div>
-            </div>
-            <div className="row">
-                <div className="todotripJumbotron col ms-md-5 me-md-2 p-5 text-white text-left rounded">
-                    <h1 className="todotripJumbotron__title">Things to do on your trip</h1>
-                    <button type='button' className="btn text-dark btn-light">Experiences</button> 
-                </div>
-                <div className="todohomeJumbotron col me-5 ms-2 p-5 text-white text-left rounded">
-                    <h1 className="todohomeJumbotron__title">Things to do from home</h1>
-                    <button type='button' className="btn text-dark btn-light"> Online Experiences</button>   
+                <div className="bodySection__row__homeJumbotron col-12 col-sm-6 text-white text-left">
+                    <div className="bodySection__homeJumbotron__inner p-5 rounded">
+                        <h1 className="bodySection__homeJumbotron__title">Things to do from home</h1>
+                        <button type='button' className="btn mt-3 py-2 px-4 text-dark btn-light">Online Experiences</button>   
+                    </div>
                 </div>
             </div>
         </div>
-        <div className="giftCards">
-            <div className="row my-4">
-                <div className="col-3 m-5">
-                    <h1>Shop Airbnb gift cards</h1>
-                    <button type='button' className="btn text-light btn-dark p-2">Learn more</button>
+        <div className="bodySection__gift giftCards m-3 p-3">
+            <div className="bodySection__gift__row row my-4">
+                <div className="gift__row__title col-3 m-5">
+                    <h1 className='gift__title__h1'>Shop Airbnb gift cards</h1>
+                    <button type='button' className="gift__title__button btn text-light btn-dark p-2 px-4"><strong>Learn more</strong></button>
                 </div>
-                <div className="col m-3">
-                    <img src="gift-card.webp" alt="" height="360px"/>
+                <div className="gift__row__image col m-3">
+                    <img className="gift__image__img" src="gift-card.webp" alt="" height="340px"/>
                 </div>
             </div>
         </div>

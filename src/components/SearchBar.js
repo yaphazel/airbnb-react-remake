@@ -1,16 +1,21 @@
-import React, {useEffect, useState} from 'react'
+import React, { useState } from 'react'
 
 function SearchBar() {
-  const [scrollPos, setScrollPos] = useState('red')
-
-  useEffect(() => {
-    console.log(window.pageYOffset)
-  },[])
-
-
+  const [searchBar, setSearchBar] = useState(false)
+  
+  const scrollPage = () =>{
+    if(window.pageYOffset > 0){
+      setSearchBar(true)
+    }
+    else{
+      setSearchBar(false)
+    }
+  };
+  
+  window.addEventListener('scroll', scrollPage);
   return (
     <div className="searchBar mt-4" id="searchBar" >
-      <ul className="searchBar__lists mb-4 nav nav-pills justify-content-center mb-3" id="pills-tab">
+      <ul className={ searchBar ? "searchBar__lists -none mb-4 nav nav-pills justify-content-center" : "searchBar__lists mb-4 nav nav-pills justify-content-center"} id="pills-tab">
         <li className="searchBar__lists__item mx-4 nav-item">
           <a href="" className="searchBar__item__link nav-tab active text-light" id="places-to-stay-tab" aria-current="page" data-bs-toggle="tab" data-bs-target="#places-to-stay" type="button" role="tab" aria-controls="places-to-stay" aria-selected="true">Places To Stay</a>
         </li>
@@ -21,7 +26,7 @@ function SearchBar() {
           <a href="" className="searchBar__item__link nav-tab text-light">Online Experiences</a>
         </li>
       </ul>
-      <div className="searchBar__content tab-content" id="myTabContent">
+      <div className={ searchBar ? "searchBar__content -none tab-content" : "searchBar__content tab-content"} id="myTabContent">
         <div className="searchBar__content__panel tab-pane fade show active" id="places-to-stay" role="tabpanel" aria-labelledby="places-to-stay-tab">
           <div className="searchBar__panel__wrapper">
             <div className="searchBar__wrapper__container p-1">
@@ -56,7 +61,7 @@ function SearchBar() {
                 <input type="text" className="searchBar__button__input form-control border-0 outline-0" placeholder='Where are you going?' />
               </button>
             </div>
-            <div className="searchBar__wrapper__container p-1 d-flex flex-row">
+            <div className="searchBar__wrapper__container -buttonTwo p-1 d-flex flex-row">
               <button className="searchBar__container__button btn">
                 <small>Date<br/><span>Add when you want to go</span></small>
               </button>

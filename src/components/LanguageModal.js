@@ -1,5 +1,5 @@
 import React from 'react'
-import languages from './LanguageData';
+import languages from './data/LanguageData';
 
 function LanguageModal() {
   return (

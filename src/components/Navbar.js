@@ -1,27 +1,39 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import SearchBar from './SearchBar';
 import LanguageModal from './LanguageModal';
 
-function Navbar() {
+const Navbar = () => {
+  const [navBar, setNavBar] = useState(false)
+
+  const scrollPage = () =>{
+    if(window.pageYOffset > 0){
+      setNavBar(true)
+    }
+    else{
+      setNavBar(false)
+    }
+  };
+  
+  window.addEventListener('scroll', scrollPage);
   return (
-    <div>
-      <nav className="navbar navbar-expand-xl navbar-dark bg-dark">
-        <div className="navbar__container container-fluid">
+    <div className="navSection">
+      <nav className={ navBar ? "navSection__nav navbar navbar-expand-xl bg-light fixed-top" : "navSection__nav navbar navbar-expand-xl navbar-dark bg-dark"}>
+        <div className="navbar__nav__container container-fluid">
           <a className="navbar__container__brand navbar-brand m-2" href="#">
-            <img className="navbarLogo" src="/airbnb-icon.png" alt="" width="34px"  />
+            <img className={ navBar ? "navbarLogo__pink ps-1" : "navbarLogo"} src={ navBar ? "/airbnb-icon-pink.png" : "/airbnb-icon.png"} alt="" width="36px"  />
           </a>    
-          <div className="sideBar">
-            <ul className="sideBar__links navbar-nav d-flex flex-row">
+          <div className="navbar__nav__sideBar">
+            <ul className="navbar__sideBar__links navbar-nav d-flex flex-row">
               <li className="sideBar__links__host nav-item mx-2">
-                <a href="#" id="become-host-link" className="sideBar__host__button btn nav-link text-light" role="button">Become A Host</a>
+                <a href="#" id="become-host-link" className={navBar ? "sideBar__host__button btn nav-link text-dark px-2" : "sideBar__host__button btn nav-link text-light px-2"} role="button">Become A Host</a>
               </li>
               <li className="sideBar__links__langauge nav-item mx-2">
-                <button type="button" id="language-link" className="sideBar__langauge__button btn nav-link" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                  <img src="/language-icon.png" alt="" width="20px" />
+                <button type="button" id="language-link" className="sideBar__langauge__button btn nav-link px-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  <img src={ navBar ? "language-icon-black.png" : "/language-icon.png"} alt="" width="20px" />
                 </button>
-                <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div className="sideBar__language__modal modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                   <div className="modal-dialog modal-xl modal-dialog-scrollable">
                     <div className="modal-content">
                       <div className="modal-header">
@@ -49,7 +61,6 @@ function Navbar() {
                 </div>
               </li>
             </ul>
-            
           </div> 
         </div>
       </nav>

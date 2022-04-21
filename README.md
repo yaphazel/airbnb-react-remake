@@ -18,3 +18,4 @@
 
 21/04/2022
 1. Footer section (responsiveness and styling)
+2. General CSS

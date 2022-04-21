@@ -50,20 +50,24 @@ function Footer() {
         </div>
       </div>
       <hr/>
-      <div className="footerSocial">
-        <div className="footerSocial__copyright">
-          <a className="btn"><img src="./language-icon-black.png" alt="" width="15px" /> English(US) </a>
-          <a className="btn"><span>$</span>HKD</a>
-          <a className="btn"><img src="./facebook.png" alt="" width="25px" /></a>
-          <a className="btn"><img src="./twitter.png" alt="" width="25px" /></a>
-          <a className="btn"><img src="./instagram.png" alt="" width="25px" /></a>
-        </div>
-        <div className="footerSocial__media d-flex flex-row">
-          <p>&copy; 2022 Airbnb, Inc. </p>
-          <div className="d-flex flex-row">
-            <p className='ps-2'><span>⋅</span> Privacy </p>
-            <p className='ps-2'><span>⋅</span> Terms </p>
-            <p className='ps-2'><span>⋅</span> Sitemap </p>
+      <div className="footerSocial container-fluid">
+        <div className="footerSocial mx-2 my-2 row justify-content-xl-between">
+          <div className="footerSocial__media order-xl-last col-12 col-xl-6 justify-content-xl-end justify-content-md-center justify-content-start">
+            <a className="footerSocial__media__language px-3"><img src="./language-icon-black.png" alt="" width="18px" /> English(US) </a>
+            <a className="footerSocial__media__currency px-3"><span>$</span>HKD</a>
+            <a className="footerSocial__media__social px-2"><img src="./facebook.png" alt="" width="22px" /></a>
+            <a className="footerSocial__media__social px-2"><img src="./twitter.png" alt="" width="22px" /></a>
+            <a className="footerSocial__media__social px-2"><img src="./instagram.png" alt="" width="22px" /></a>
+          </div>
+          <div className="footerSocial__copyright py-2 order-xl-first col-12 col-xl-6 justify-content-xl-start justify-content-md-center justify-content-start">
+            <div className="footerSocial__copyright__title px-3">
+              <p className="footerSocial__copyright__copyright">&copy; 2022 Airbnb, Inc. </p>
+            </div>
+            <div className="footerSocial__copyright__links">
+              <a className='ps-2 d-flex flex-row text-decoration-none'><span className='pe-1'>⋅</span> Privacy </a>
+              <a className='ps-2 d-flex flex-row text-decoration-none'><span className='pe-1'>⋅</span> Terms </a>
+              <a className='ps-2 d-flex flex-row text-decoration-none'><span className='pe-1'>⋅</span> Sitemap </a>
+            </div>
           </div>
         </div>
       </div>

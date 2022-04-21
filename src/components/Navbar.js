@@ -22,7 +22,7 @@ const Navbar = () => {
       <nav className={ navBar ? "navSection__nav navbar navbar-expand-xl bg-light fixed-top" : "navSection__nav navbar navbar-expand-xl navbar-dark bg-dark"}>
         <div className="navbar__nav__container container-fluid">
           <a className="navbar__container__brand navbar-brand m-2" href="#">
-            <img className={ navBar ? "navbarLogo__pink ps-1" : "navbarLogo"} src={ navBar ? "/airbnb-icon-pink.png" : "/airbnb-icon.png"} alt="" width="36px"  />
+            {/* <img className={ navBar ? "navbarLogo__pink ps-1" : "navbarLogo"} src={ navBar ? "/airbnb-icon-pink.png" : "/airbnb-icon.png"} alt="" width="20px"  /> */}
           </a>    
           <div className="navbar__nav__sideBar">
             <ul className="navbar__sideBar__links navbar-nav d-flex flex-row">
@@ -31,7 +31,7 @@ const Navbar = () => {
               </li>
               <li className="sideBar__links__langauge nav-item mx-2">
                 <button type="button" id="language-link" className="sideBar__langauge__button btn nav-link px-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                  <img src={ navBar ? "language-icon-black.png" : "/language-icon.png"} alt="" width="20px" />
+                  <img src={ navBar ? "./airbnb-react-remake/public/language-icon-black.png" : "./airbnb-react-remake/public/language-icon.png"} alt="" width="20px" />
                 </button>
                 <div className="sideBar__language__modal modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                   <div className="modal-dialog modal-xl modal-dialog-scrollable">

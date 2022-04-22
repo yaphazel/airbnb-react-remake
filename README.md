@@ -1,3 +1,5 @@
+Website Link: https://yaphazel.github.io/airbnb-react-remake/ 
+
 Note: Formatting currently works only on desktop screen. Mobile version is work in progress.
 
 07/04/2022
@@ -21,3 +23,5 @@ Note: Formatting currently works only on desktop screen. Mobile version is work 
 21/04/2022
 1. Footer section (responsiveness and styling)
 2. General CSS
+
+VERSION ONE COMPLETED 
